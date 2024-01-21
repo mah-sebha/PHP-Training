@@ -7,13 +7,13 @@ $pizzaQty = 10;
 $tunaSandwichQty = 35;
 
 // Orders (user inputs)
-$orderType = 'pizza'; // pizza or tunaSandwich
+$orderType = ''; // pizza or tunaSandwich
 $orderQty = 5;
 
 echo "<pre>";
 $orderType = $orderType ?? 'specials';
 $orderMade = $orderType != '' && $orderQty > 0 ? 'Yes' : 'No';
-
+//echo $orderMade;
 
 if ($orderType === 'pizza' && $pizzaQty < $orderQty) {
     die ("Sorry, Not enough Pizza ingredients");
@@ -39,13 +39,13 @@ for ($i = 0; $i < $orderQty; $i++) {
     echo "- Preparing $orderType # ".($i + 1)." of $orderQty!\n";
 }
 
-/*$orderReady = false;
+$orderReady = false;
 $c = 0;
 while (!$orderReady) {
     echo "- Preparing $orderType # ".($c + 1)." of $orderQty!\n";
     $c++;
     $orderReady = $c >= $orderQty;
-}*/
+}
 
 echo "Your $orderType is ready!\n";
 
