@@ -29,3 +29,8 @@ echo $hello[0]; // w
 
 $hello[10] = "*";
 echo $hello; //  world     *
+
+// Add String to Existing Strings
+$word = "hello";
+$word .= "more text";
+$word = $word . "more text";
