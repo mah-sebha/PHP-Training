@@ -1,5 +1,7 @@
 <?php
 
+namespace Libyana;
+
 class MobileOperator
 {
     const TITLE = 'Libyana';

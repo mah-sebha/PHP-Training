@@ -1,5 +1,7 @@
 <?php
 
+namespace Madar;
+
 class MobileOperator
 {
     const TITLE = 'Madar';
