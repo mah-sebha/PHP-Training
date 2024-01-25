@@ -3,11 +3,11 @@
 include __DIR__ . '/db.php';
 
 if (isset($_GET['logout'])) {
-    echo "222";
+    
     session_start();
     unset($_SESSION['user']);
-    // header('Location: admin_login.php');
-    // exit();
+    header('Location: admin_login.php');
+    exit();
 }
 
 $error = '';
