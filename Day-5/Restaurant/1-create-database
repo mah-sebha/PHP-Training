@@ -1,0 +1,8 @@
+-- Create database
+CREATE DATABASE restaurant_db;
+
+-- Select database
+USE restaurant_db;
+
+-- Drop database
+-- DROP DATABASE restaurant_db;
