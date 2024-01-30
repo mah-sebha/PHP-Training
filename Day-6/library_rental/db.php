@@ -1,7 +1,7 @@
 <?php
 
 $user = 'db_user';
-$pass = '0nlyApa$$w0rd';
+$pass = 'db_password';
 
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=test_sebha_day6', $user, $pass);
